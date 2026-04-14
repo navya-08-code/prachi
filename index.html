@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love, Prachi ❤️</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Ionicons for cute icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-mode">
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="heart-loader"></div>
+        <p class="loading-text">Loading love... ❤️</p>
+    </div>
+
+    <!-- Floating Background Hearts -->
+    <div id="background-hearts"></div>
+
+    <!-- Main Content Wrapper -->
+    <div id="main-content" style="display: none;">
+        <!-- Theme Toggle -->
+        <button id="theme-toggle" class="glass-btn float-btn" aria-label="Toggle Theme">
+            <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            <ion-icon name="sunny-outline" class="sun-icon"></ion-icon>
+        </button>
+
+        <!-- Music Toggle -->
+        <button id="music-toggle" class="glass-btn float-btn music-btn" aria-label="Toggle Music">
+            <ion-icon name="musical-notes-outline" class="music-icon"></ion-icon>
+        </button>
+
+        <!-- Audio Player (Hidden) -->
+        <!-- User will need to add their own music file to assets/music.mp3 -->
+        <audio id="bg-music" loop>
+            <source src="assets/music.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Hero Section -->
+        <section id="hero" class="fullscreen flex-center flex-col glass-section">
+            <h1 class="hero-title reveal">For My Love, <span class="highlight">Prachi</span> ❤️</h1>
+            <p class="hero-subtitle reveal delay-1">A little corner of the internet made just for you.</p>
+            <button id="hero-btn" class="glow-btn reveal delay-2">Click My Heart</button>
+        </section>
+
+        <!-- About Her Section -->
+        <section id="about" class="section glass-section">
+            <h2 class="section-title reveal">What Makes You Special</h2>
+            <div class="about-card reveal delay-1">
+                <ion-icon name="sparkles" class="card-icon"></ion-icon>
+                <h3 class="card-title">To the most amazing girl...</h3>
+                <p class="card-text">You bring light into every room you walk into. Your smile is my favorite thing to
+                    see, and your laugh is my favorite sound.</p>
+            </div>
+        </section>
+
+        <!-- Memories Gallery -->
+        <section id="gallery-section" class="section">
+            <h2 class="section-title reveal">Our Beautiful Memories</h2>
+            <div class="gallery-grid">
+                <!-- Add actual image paths in src -->
+                <div class="gallery-item reveal"><img src="assets/prachi1.jpg" alt="Memory 1"></div>
+                <div class="gallery-item reveal delay-1"><img src="assets/prachi2.jpg" alt="Memory 2"></div>
+                <div class="gallery-item reveal delay-2"><img src="assets/prachi3.jpg" alt="Memory 3"></div>
+                <div class="gallery-item reveal"><img src="assets/prachi4.jpg" alt="Memory 4"></div>
+                <div class="gallery-item reveal delay-1"><img src="assets/prachi5.jpg" alt="Memory 5"></div>
+                <div class="gallery-item reveal delay-2"><img src="assets/prachi6.jpg?v=2" alt="Memory 6"></div>
+            </div>
+        </section>
+
+        <!-- Lightbox for Gallery -->
+        <div id="lightbox" class="lightbox">
+            <span class="close-lightbox">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+        </div>
+
+        <!-- Love Letter Section -->
+        <section id="love-letter" class="section">
+            <div class="letter-container reveal">
+                <div class="wax-seal"></div>
+                <h2 class="letter-title">My Dearest Prachi,</h2>
+                <div class="letter-body">
+                    <p>From the moment you entered my life, everything changed for the better. This letter is a small
+                        reflection of the massive space you take up in my heart.</p>
+                    <p>uhmm lets start from beginning on 26nd july 2022 meine teko pheli bhaar dekha and i fell in love
+                        with u or sabse phele vo aakho ke pass wala scar notice kiya tha uske baad yk bhutt problem thi
+                        dosti karne mei then i wait n in 12th meko mauka mila n i grab it bhaut time laga but finally u
+                        r mine i loveee u sooo much my gattudi prachudi prachiiiiii i loveu soo much mei teko promise
+                        krta hu end tk sath duga life end tk u wil be my patner or silent treatment mt diya kr baacha
+                        meko bhautt daar lgta n there are many reason jiske wajh se i fell more harder and deeper for u
+                        feeling toh teko meine tere birthday pe bata di thi yaad kr lena n now u r offically mine after
+                        around 4 years mehnat rang laai i'm soo haooy wiht u or mei jindgi bhar khush rahuga n teko bhi
+                        rakhuga promise n i lovee u sooo much my baacha</p>
+                    <p>Forever Yours,</p>
+                    <p class="signature">[Your Navya]</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reasons Why I Love You -->
+        <section id="reasons" class="section">
+            <h2 class="section-title reveal">Reasons Why I Love You</h2>
+            <div class="reasons-grid">
+                <div class="reason-card reveal">
+                    <div class="reason-card-inner">
+                        <div class="reason-card-front">
+                            <ion-icon name="heart" class="reason-icon"></ion-icon>
+                            <h3>Reason 1</h3>
+                        </div>
+                        <div class="reason-card-back">
+                            <p>Because of your incredibly kind heart and the way you care for others.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reason-card reveal delay-1">
+                    <div class="reason-card-inner">
+                        <div class="reason-card-front">
+                            <ion-icon name="heart" class="reason-icon"></ion-icon>
+                            <h3>Reason 2</h3>
+                        </div>
+                        <div class="reason-card-back">
+                            <p>For your beautiful smile that instantly makes my day better.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="reason-card reveal delay-2">
+                    <div class="reason-card-inner">
+                        <div class="reason-card-front">
+                            <ion-icon name="heart" class="reason-icon"></ion-icon>
+                            <h3>Reason 3</h3>
+                        </div>
+                        <div class="reason-card-back">
+                            <p>Because you are not just my love, but my absolute best friend.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Adventures -->
+        <section id="future-section" class="section glass-section">
+            <h2 class="section-title reveal">Adventures Waiting For Us</h2>
+            <div class="about-card reveal delay-1">
+                <ion-icon name="airplane" class="card-icon"></ion-icon>
+                <h3 class="card-title">Since April 2, 2026...</h3>
+                <p class="card-text">Our beautiful story has just begun! Since we just started dating, there are still so many "firsts" waiting for us. I can't wait for our first official date, our late-night walks, looking at the stars, and endless conversations. I promise to make every future moment with you absolutely magical.</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="glass-section">
+            <p>Made with Endless Love for <span class="highlight">Prachi</span> 💕</p>
+            <button id="surprise-btn" class="glow-btn small-btn mt-2">✨ Click for a Surprise ✨</button>
+        </footer>
+
+        <!-- Surprise Modal -->
+        <div id="surprise-modal" class="modal">
+            <div class="modal-content glass-card surprise-animated">
+                <span class="close-modal">&times;</span>
+                <div class="modal-pulsing-heart">❤️</div>
+                <h2>Prachi,</h2>
+                <p class="mt-2 text-highlight">You Mean The Absolute World To Me.</p>
+                <p class="long-para">Thank you for being my peace, my home, and the most beautiful part of my life. Every single moment with you is incredibly precious. I promise to love you, cherish you, and stand by your side forever through every adventure we take on together.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Canvas Confetti Library -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
